@@ -1,0 +1,13 @@
+<extension xmlns="http://ns.adobe.com/air/extension/20.0">
+    <id>com.pvue.hello</id>
+    <versionNumber>1.0.0</versionNumber>
+    <platforms>
+        <platform name="MacOS-x86-64">
+            <applicationDeployment>
+                <nativeLibrary>hello.framework</nativeLibrary>
+                <initializer>helloAneExtensionInitializer</initializer>
+                <finalizer>helloAneExtensionFinalizer</finalizer>
+            </applicationDeployment>
+        </platform>         
+    </platforms>
+</extension>

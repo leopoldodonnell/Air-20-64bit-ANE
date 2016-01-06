@@ -1,0 +1,7 @@
+bin-debug
+hello_ane/bin
+hello_ane/hello
+MACOS-x86-64
+*.ane
+hello_ane/hello.osx/build
+

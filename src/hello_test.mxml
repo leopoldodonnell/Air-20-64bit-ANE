@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+                       xmlns:s="library://ns.adobe.com/flex/spark" 
+                       xmlns:mx="library://ns.adobe.com/flex/mx">
+    <fx:Declarations>
+        <!-- Place non-visual elements (e.g., services, value objects) here -->
+    </fx:Declarations>
+    <fx:Script>
+        <![CDATA[
+            import com.pvue.Hello;
+                                    
+            protected function tsButton_clickHandler(event:MouseEvent):void
+            {
+              var hello:Hello = new Hello();
+              try {
+                  result.text = hello.say_hi();                  
+              }
+              catch(error:Error) {
+                  result.text = error.message;
+              }
+            }
+        ]]>
+    </fx:Script>
+    <s:VGroup gap="10" width="100%" top="10" bottom="0" horizontalAlign="center">
+        <s:Button id="tsButton" label="Say Hi!" click="tsButton_clickHandler(event)" buttonMode="true"/>
+        <s:Label id="result" text="This is where the output would be." width="100%" />
+    </s:VGroup>
+</s:WindowedApplication>
