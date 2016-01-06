@@ -1,8 +1,9 @@
 # hello with Adobe Air 20 - Mac OS 64-bit
 
 ***As of January 2016, the following very simple ANE for Adobe Air 20.0 and OSX, builds but does not work. This project
-is a plea to anyone who can suggest a way to get it working (outside of using a captive Adobe Air 19 runtime).*** Feel free
-to use *Issues* to suggest fixes that could get this up on its feet as an example to the many of us who are stuck.
+is a plea to anyone who can suggest a way to get it working (outside of using a captive Adobe Air 19 runtime).***
+
+Feel free to use *Issues* to suggest fixes that could get this up on its feet as an example to the many of us who are stuck.
 
 This ANE has a simple enough setup where the ANE has a single entry point 'say_hi' that should return a string. The accompanying flex
 application provides a few controls that access the ANE and updates a Label with the result, if successful, or the error
@@ -44,32 +45,32 @@ Starting inside the project root directory, begin by building the ANE, `hello_an
 You should see output like this:
 
 ```bash
-{your_path}/helloANE/hello_ane/hello.osx
-~/Dropbox/dev/flex/screenshot/helloANE/hello_ane/hello.osx ~/Dropbox/dev/flex/screenshot/helloANE/hello_ane
+{your_path}/hello_ane/hello.osx
+{your_path}/hello_ane/hello.osx {your_path}/hello_ane
 === BUILD TARGET hello OF PROJECT hello WITH CONFIGURATION Debug ===
 
 Check dependencies
 
-CompileC {your_path}/helloANE/hello_ane/hello/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello_ane.o hello_ane.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-    cd {your_path}/helloANE/hello_ane/hello.osx
+CompileC {your_path}/hello_ane/hello/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello_ane.o hello_ane.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd {your_path}/hello_ane/hello.osx
     export LANG=en_US.US-ASCII
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=116 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-prune-interval=86400 -fmodules-prune-after=345600 -fbuild-session-file=/var/folders/mt/07p9mh7d581dmctpv4brd8fwl80ys6/C/org.llvm.clang/ModuleCache/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror=non-modular-include-in-framework-module -Xclang -fmodule-implementation-of -Xclang hello -Wno-trigraphs -fpascal-strings -O0 -fno-common -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wunreachable-code -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.10 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote {your_path}/helloANE/hello_ane/hello/build/hello.build/Debug/hello.build/hello-generated-files.hmap -I{your_path}/helloANE/hello_ane/hello/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap -I{your_path}/helloANE/hello_ane/hello/build/hello.build/Debug/hello.build/hello-all-non-framework-target-headers.hmap -ivfsoverlay {your_path}/helloANE/hello_ane/hello/build/hello.build/all-product-headers.yaml -iquote {your_path}/helloANE/hello_ane/hello/build/hello.build/Debug/hello.build/hello-project-headers.hmap -I{your_path}/helloANE/hello_ane/hello/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I{your_path}/helloANE/hello_ane/hello/build/hello.build/Debug/hello.build/DerivedSources/x86_64 -I{your_path}/helloANE/hello_ane/hello/build/hello.build/Debug/hello.build/DerivedSources -F{your_path}/helloANE/hello_ane/hello/build/Debug -F/Applications/Adobe\ Flash\ Builder\ 4.7/sdks/4.6.0/runtimes/air/mac -MMD -MT dependencies -MF {your_path}/helloANE/hello_ane/hello/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello_ane.d --serialize-diagnostics {your_path}/helloANE/hello_ane/hello/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello_ane.dia -c {your_path}/helloANE/hello_ane/hello.osx/hello_ane.cpp -o {your_path}/helloANE/hello_ane/hello/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello_ane.o
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=116 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-prune-interval=86400 -fmodules-prune-after=345600 -fbuild-session-file=/var/folders/mt/07p9mh7d581dmctpv4brd8fwl80ys6/C/org.llvm.clang/ModuleCache/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror=non-modular-include-in-framework-module -Xclang -fmodule-implementation-of -Xclang hello -Wno-trigraphs -fpascal-strings -O0 -fno-common -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wunreachable-code -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.10 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote {your_path}/hello_ane/hello/build/hello.build/Debug/hello.build/hello-generated-files.hmap -I{your_path}/hello_ane/hello/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap -I{your_path}/hello_ane/hello/build/hello.build/Debug/hello.build/hello-all-non-framework-target-headers.hmap -ivfsoverlay {your_path}/hello_ane/hello/build/hello.build/all-product-headers.yaml -iquote {your_path}/hello_ane/hello/build/hello.build/Debug/hello.build/hello-project-headers.hmap -I{your_path}/hello_ane/hello/build/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I{your_path}/hello_ane/hello/build/hello.build/Debug/hello.build/DerivedSources/x86_64 -I{your_path}/hello_ane/hello/build/hello.build/Debug/hello.build/DerivedSources -F{your_path}/hello_ane/hello/build/Debug -F/Applications/Adobe\ Flash\ Builder\ 4.7/sdks/4.6.0/runtimes/air/mac -MMD -MT dependencies -MF {your_path}/hello_ane/hello/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello_ane.d --serialize-diagnostics {your_path}/hello_ane/hello/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello_ane.dia -c {your_path}/hello_ane/hello.osx/hello_ane.cpp -o {your_path}/hello_ane/hello/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello_ane.o
 
-Ld {your_path}/helloANE/hello_ane/hello/build/Debug/hello.framework/Versions/A/hello normal x86_64
-    cd {your_path}/helloANE/hello_ane/hello.osx
+Ld {your_path}/hello_ane/hello/build/Debug/hello.framework/Versions/A/hello normal x86_64
+    cd {your_path}/hello_ane/hello.osx
     export MACOSX_DEPLOYMENT_TARGET=10.10
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -L{your_path}/helloANE/hello_ane/hello/build/Debug -L/Applications/Adobe\ Flash\ Builder\ 4.7/sdks/4.6.0/runtimes/air/mac -F{your_path}/helloANE/hello_ane/hello/build/Debug -F/Applications/Adobe\ Flash\ Builder\ 4.7/sdks/4.6.0/runtimes/air/mac -filelist {your_path}/helloANE/hello_ane/hello/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello.LinkFileList -install_name @rpath/hello.framework/Versions/A/hello -Xlinker -rpath -Xlinker @executable_path/../Frameworks -Xlinker -rpath -Xlinker @loader_path/Frameworks -mmacosx-version-min=10.10 -stdlib=libc++ /Applications/Adobe\ Flash\ Builder\ 4.7/sdks/4.6.0/runtimes/air/mac/Adobe\ AIR.framework/Versions/1.0/Adobe\ AIR_64 -framework Adobe\ AIR -framework Cocoa -single_module -compatibility_version 1 -current_version 1 -Xlinker -dependency_info -Xlinker {your_path}/helloANE/hello_ane/hello/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello_dependency_info.dat -o {your_path}/helloANE/hello_ane/hello/build/Debug/hello.framework/Versions/A/hello
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -L{your_path}/hello_ane/hello/build/Debug -L/Applications/Adobe\ Flash\ Builder\ 4.7/sdks/4.6.0/runtimes/air/mac -F{your_path}/hello_ane/hello/build/Debug -F/Applications/Adobe\ Flash\ Builder\ 4.7/sdks/4.6.0/runtimes/air/mac -filelist {your_path}/hello_ane/hello/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello.LinkFileList -install_name @rpath/hello.framework/Versions/A/hello -Xlinker -rpath -Xlinker @executable_path/../Frameworks -Xlinker -rpath -Xlinker @loader_path/Frameworks -mmacosx-version-min=10.10 -stdlib=libc++ /Applications/Adobe\ Flash\ Builder\ 4.7/sdks/4.6.0/runtimes/air/mac/Adobe\ AIR.framework/Versions/1.0/Adobe\ AIR_64 -framework Adobe\ AIR -framework Cocoa -single_module -compatibility_version 1 -current_version 1 -Xlinker -dependency_info -Xlinker {your_path}/hello_ane/hello/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello_dependency_info.dat -o {your_path}/hello_ane/hello/build/Debug/hello.framework/Versions/A/hello
 
-Touch {your_path}/helloANE/hello_ane/hello/build/Debug/hello.framework
-    cd {your_path}/helloANE/hello_ane/hello.osx
-    /usr/bin/touch -c {your_path}/helloANE/hello_ane/hello/build/Debug/hello.framework
+Touch {your_path}/hello_ane/hello/build/Debug/hello.framework
+    cd {your_path}/hello_ane/hello.osx
+    /usr/bin/touch -c {your_path}/hello_ane/hello/build/Debug/hello.framework
 
 ** BUILD SUCCEEDED **
 
-~/Dropbox/dev/flex/screenshot/helloANE/hello_ane
+{your_path}/hello_ane
 cp: hello.osx/build/Debug/hello.framework/Modules: No such file or directory
 Loading configuration file /Applications/Adobe Flash Builder 4.7/sdks/4.6.0/frameworks/air-config.xml
-{your_path}/helloANE/hello_ane/bin/hello_ane.swc (2074 bytes)
+{your_path}/hello_ane/bin/hello_ane.swc (2074 bytes)
 Archive:  bin/hello_ane.swc
   inflating: library.swf
 ```
