@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Setup PATH to point to the newly overlayed AIR20 binaries
-export PATH="/Applications/Adobe Flash Builder 4.7/sdks/4.6.0/bin":${PATH}
+export PATH="/Applications/Adobe Flash Builder 4.7/sdks/4.15.0/bin":${PATH}
 
 # Build hello.framework
 pushd hello.osx

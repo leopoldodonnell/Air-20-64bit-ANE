@@ -1,5 +1,6 @@
 
 #include <Adobe AIR/Adobe AIR.h>
+#include <Adobe AIR/FlashRuntimeExtensions.h>
 
 extern "C" {
     //initializer / finalizer

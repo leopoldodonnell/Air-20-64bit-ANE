@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1951542C1C4692980067EAA6 /* Adobe AIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1951542B1C4692980067EAA6 /* Adobe AIR.framework */; };
+		1951542E1C4692B80067EAA6 /* Adobe AIR_64 in Frameworks */ = {isa = PBXBuildFile; fileRef = 1951542D1C4692B80067EAA6 /* Adobe AIR_64 */; };
 		199AF1FB1C3D78880085D1F7 /* hello.h in Headers */ = {isa = PBXBuildFile; fileRef = 199AF1FA1C3D78100085D1F7 /* hello.h */; };
 		19FD8BD21C3C5D840011515E /* hello.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FD8BC61C3C5D840011515E /* hello.framework */; };
 		19FD8BD91C3C5D840011515E /* helloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FD8BD81C3C5D840011515E /* helloTests.m */; };
 		19FD8BE31C3C5DB10011515E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FD8BE21C3C5DB10011515E /* Cocoa.framework */; };
-		19FD8BE71C3C5E670011515E /* Adobe AIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FD8BE61C3C5E670011515E /* Adobe AIR.framework */; };
 		19FD8BEA1C3C5F260011515E /* hello_ane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19FD8BE81C3C5F260011515E /* hello_ane.cpp */; };
 		19FD8BEB1C3C5F260011515E /* hello_ane.h in Headers */ = {isa = PBXBuildFile; fileRef = 19FD8BE91C3C5F260011515E /* hello_ane.h */; };
-		19FD8BED1C3D5C230011515E /* Adobe AIR_64 in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FD8BEC1C3D5C230011515E /* Adobe AIR_64 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1951542B1C4692980067EAA6 /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Adobe AIR.framework"; path = "../../../../../../../../Applications/Adobe Flash Builder 4.7/sdks/4.15.0/runtimes/air/mac/Adobe AIR.framework"; sourceTree = "<group>"; };
+		1951542D1C4692B80067EAA6 /* Adobe AIR_64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "Adobe AIR_64"; path = "../../../../../../../../Applications/Adobe Flash Builder 4.7/sdks/4.15.0/runtimes/air/mac/Adobe AIR.framework/Versions/1.0/Adobe AIR_64"; sourceTree = "<group>"; };
 		199AF1FA1C3D78100085D1F7 /* hello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hello.h; sourceTree = "<group>"; };
 		19FD8BC61C3C5D840011515E /* hello.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hello.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FD8BCA1C3C5D840011515E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,8 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19FD8BED1C3D5C230011515E /* Adobe AIR_64 in Frameworks */,
-				19FD8BE71C3C5E670011515E /* Adobe AIR.framework in Frameworks */,
+				1951542E1C4692B80067EAA6 /* Adobe AIR_64 in Frameworks */,
+				1951542C1C4692980067EAA6 /* Adobe AIR.framework in Frameworks */,
 				19FD8BE31C3C5DB10011515E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +68,8 @@
 		19FD8BBC1C3C5D840011515E = {
 			isa = PBXGroup;
 			children = (
+				1951542D1C4692B80067EAA6 /* Adobe AIR_64 */,
+				1951542B1C4692980067EAA6 /* Adobe AIR.framework */,
 				19FD8BEC1C3D5C230011515E /* Adobe AIR_64 */,
 				19FD8BE61C3C5E670011515E /* Adobe AIR.framework */,
 				19FD8BE21C3C5DB10011515E /* Cocoa.framework */,
@@ -342,7 +346,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_APPS_DIR)/Adobe Flash Builder 4.7/sdks/4.6.0/runtimes/air/mac\"/**";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_APPS_DIR)/Adobe Flash Builder 4.7/sdks/4.15.0/runtimes/air/mac\"/**";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = hello/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -363,7 +367,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_APPS_DIR)/Adobe Flash Builder 4.7/sdks/4.6.0/runtimes/air/mac\"/**";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_APPS_DIR)/Adobe Flash Builder 4.7/sdks/4.15.0/runtimes/air/mac\"/**";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = hello/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
